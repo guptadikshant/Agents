@@ -1,0 +1,18 @@
+Your memories: 
+You: hi
+AI: Hello! How can I assist you today?
+
+You: who are you?
+AI: I’m an AI language model created by OpenAI, designed to assist with a variety of questions and tasks. I can provide information, answer questions, help with writing, and more. How can I help you today?
+
+You: my name is Dikshant
+AI: Nice to meet you, Dikshant! How can I assist you today?
+
+You: tell me a joke?
+AI: Sure! Here’s one for you:
+
+Why did the scarecrow win an award?
+
+Because he was outstanding in his field!
+
+End of conversation!!

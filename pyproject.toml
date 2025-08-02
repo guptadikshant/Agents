@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "agents"
+version = "0.1.0"
+description = "Generative AI Agents project"
+authors = ["guptadikshant99@gmail.com"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.4"
+openai = "*"
+crewai = {extras = ["tools"], version = "^0.108.0"}
+streamlit = "*"
+langchain = "*"
+langchain-community = "*"
+langchain-openai = "*"
+langchain-google-genai = "*"
+langchain-groq = "*"
+python-dotenv = "*"
+jupyter = "*"
+ipykernel = "*"
+docarray = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
