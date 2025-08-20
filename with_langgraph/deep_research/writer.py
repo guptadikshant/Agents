@@ -1,7 +1,10 @@
 from typing import TypedDict
 
+from dotenv import find_dotenv, load_dotenv
 from langchain_openai import ChatOpenAI
 from langgraph.graph import END, START, StateGraph
+
+load_dotenv(find_dotenv())
 
 llm = ChatOpenAI(model="gpt-4.1-mini", temperature=0)
 
@@ -41,4 +44,4 @@ def get_final_resport(research: str):
     workflow = generate_graph()
     response = workflow.invoke({"intial_research": research})
 
-    return response['generated_report']
+    return response["generated_report"]

@@ -1,8 +1,11 @@
 from typing import TypedDict
 
+from dotenv import find_dotenv, load_dotenv
 from langchain_openai import ChatOpenAI
 from langgraph.graph import END, START, StateGraph
 from pydantic import BaseModel
+
+load_dotenv(find_dotenv())
 
 HOW_MANY_SEARCHES = 5
 

@@ -1,13 +1,16 @@
 import json
 from typing import TypedDict
 
+from dotenv import find_dotenv, load_dotenv
 from langchain_community.tools.tavily_search import TavilySearchResults
 from langchain_openai import ChatOpenAI
 from langgraph.graph import END, START, StateGraph
 from langgraph.prebuilt import ToolNode, tools_condition
 
+load_dotenv(find_dotenv())
+
 llm = ChatOpenAI(model="gpt-4.1-mini", temperature=0)
-tool = [TavilySearchResults(max_results=1, topic="general")]
+tool = [TavilySearchResults(max_results=5, topic="general")]
 llm_with_tool = llm.bind_tools(tool)
 
 
