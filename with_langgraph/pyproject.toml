@@ -15,7 +15,9 @@ dependencies = [
     "langchain-groq>=0.3.2",
     "langchain-openai>=0.3.18",
     "langgraph>=0.4.7",
+    "langgraph-checkpoint-postgres>=3.0.4",
     "openai>=1.82.0",
     "pandas>=2.2.3",
+    "psycopg[binary,pool]>=3.3.3",
     "python-dotenv>=1.1.0",
 ]

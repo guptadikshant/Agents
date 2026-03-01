@@ -86,8 +86,6 @@ if prompt := st.chat_input("What's on your mind?"):
     # Add AI response to chat history
     st.session_state.messages.append({"role": "assistant", "content": ai_response})
 
-    print(f"Messages in session state: {st.session_state.messages}")
-
 # Add a sidebar with information
 with st.sidebar:
     st.markdown("### About")
